@@ -2,6 +2,14 @@ public class Customers {
     private int customerNumber;
     private int arrivalTime;
     private int durationService;
+    private int remainingServiceTime;
+
+    public Customers(int customerNumber, int arrivalTime, int durationService){
+        this.customerNumber = customerNumber;
+        this.arrivalTime = arrivalTime;
+        this.durationService = durationService;
+        this.remainingServiceTime = durationService;
+    }
     
 
     public int getCustomerNumber(){
@@ -16,5 +24,8 @@ public class Customers {
         return durationService;
     }
 
+    public int getRemainingServiceTime(){
+        return remainingServiceTime;
+    }
 
 }
