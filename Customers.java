@@ -4,27 +4,26 @@ public class Customers {
     private int durationService;
     private int remainingServiceTime;
 
-    public Customers(int customerNumber, int arrivalTime, int durationService){
+    public Customers(int customerNumber, int arrivalTime, int durationService) {
         this.customerNumber = customerNumber;
         this.arrivalTime = arrivalTime;
         this.durationService = durationService;
         this.remainingServiceTime = durationService;
     }
-    
-    public int getCustomerNumber(){
+
+    public int getCustomerNumber() {
         return customerNumber;
     }
 
-    public int getArrivalTimet(){
+    public int getArrivalTime() { // Fixed typo
         return arrivalTime;
     }
 
-    public int getDurationService(){
+    public int getDurationService() {
         return durationService;
     }
 
-    public int getRemainingServiceTime(){
+    public int getRemainingServiceTime() {
         return remainingServiceTime;
     }
-
 }
