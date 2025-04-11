@@ -11,7 +11,6 @@ public class Customers {
         this.remainingServiceTime = durationService;
     }
     
-
     public int getCustomerNumber(){
         return customerNumber;
     }
