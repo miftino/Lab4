@@ -29,7 +29,7 @@ public class Simulation {
             for (int i = 0; i < numTeller; i++) {
                 if (teller.get(i) != null) {
                     Customers customer = teller.get(i);
-                    customer.remainingServiceTime--;
+                    customer.setRemainingServiceTime(customer.getRemainingServiceTime() - 1);
                     if (customer.getRemainingServiceTime() == 0) {
                         totalProcessTime += currentTime - customer.getArrivalTime();
                         customersProcessed++;

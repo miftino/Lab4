@@ -26,4 +26,9 @@ public class Customers {
     public int getRemainingServiceTime() {
         return remainingServiceTime;
     }
+    public void setRemainingServiceTime(int time) {
+        this.remainingServiceTime = time;
+    }
+    
+
 }
