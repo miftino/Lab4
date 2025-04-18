@@ -15,7 +15,7 @@ public class Customers {
         return customerNumber;
     }
 
-    public int getArrivalTime() { // Fixed typo
+    public int getArrivalTime() {
         return arrivalTime;
     }
 

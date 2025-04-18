@@ -21,7 +21,7 @@ public class Simulation {
                 if (teller.get(i) == null && !queue.isEmpty()) {
                     Customers customer = queue.remove(0);
                     teller.set(i, customer);
-                    currentTime = Math.max(currentTime, customer.getArrivalTimet());
+                    currentTime = Math.max(currentTime, customer.getArrivalTime());
                 }
             }
 
@@ -31,7 +31,7 @@ public class Simulation {
                     Customers customer = teller.get(i);
                     customer.remainingServiceTime--;
                     if (customer.getRemainingServiceTime() == 0) {
-                        totalProcessTime += currentTime - customer.getArrivalTimet();
+                        totalProcessTime += currentTime - customer.getArrivalTime();
                         customersProcessed++;
                         teller.set(i, null);
                     }
