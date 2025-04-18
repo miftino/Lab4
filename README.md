@@ -40,6 +40,5 @@ Structure           | Where Used               | Purpose
 List<Customers>     | Main queue/input list    | Holds all customers in simulation  
 ArrayList<Customers>| Waiting line             | Holds customers waiting for a teller  
 ArrayList<Customers>| Tellers                  | Tracks active customers per teller  
-Iterator            | Arrival check loop       | Used to add customers based on time  
 
 
